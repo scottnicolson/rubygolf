@@ -1,14 +1,10 @@
 class Golf
-  def self.hole1(b)
-    b.inject{ |s, e|  s * e }
+  def self.hole1(a)
+    a.inject(:*)
   end
 
   def self.hole2(b)
     b.split.sort_by{ |b| b[1] }.join ' '
-  end
-
-  def self.hole1(a)
-    a.inject(:*)
   end
 
   def self.hole6(n)
