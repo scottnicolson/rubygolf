@@ -1,4 +1,8 @@
 class Golf
+  def self.hole1(b)
+    b.inject{ |s, e|  s * e }
+  end
+
 
   def self.hole6(n)
     (1..n).to_a.map { |i|
