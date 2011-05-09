@@ -1,5 +1,9 @@
 class Golf
 
+  def self.hole1(a)
+    a.inject(:*)
+  end
+
   def self.hole6(n)
     (1..n).to_a.map { |i|
       i%15 == 0 ? 'fizzbuzz' : (i%3 == 0 ? 'fizz' : (i%5 == 0 ? 'buzz' : i))
