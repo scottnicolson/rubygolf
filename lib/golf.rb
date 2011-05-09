@@ -3,6 +3,9 @@ class Golf
     b.inject{ |s, e|  s * e }
   end
 
+  def self.hole2(b)
+    b.split.sort_by{ |b| b[1] }.join ' '
+  end
 
   def self.hole6(n)
     (1..n).to_a.map { |i|
